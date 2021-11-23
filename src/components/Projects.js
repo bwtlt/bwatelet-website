@@ -1,6 +1,7 @@
-import Thumbnail from "./Thumbnail";
+import React from 'react';
+import Thumbnail from './Thumbnail';
 
-function Projects(props) {
+const Projects = function () {
   return (
     <div>
       <h1 className="mb-3">Projects</h1>
@@ -20,6 +21,6 @@ function Projects(props) {
       />
     </div>
   );
-}
+};
 
 export default Projects;

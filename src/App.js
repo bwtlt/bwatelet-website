@@ -1,18 +1,20 @@
-//import logo from './logo.svg';
-import { HashRouter, Routes, Route, NavLink } from "react-router-dom";
-import Home from "./components/Home.js";
-import Projects from "./components/Projects.js";
-import Articles from "./components/Articles.js";
-import About from "./components/About.js";
-import "./App.css";
+import React from 'react';
+import {
+  HashRouter, Routes, Route, NavLink,
+} from 'react-router-dom';
+import Home from './components/Home';
+import Projects from './components/Projects';
+import Articles from './components/Articles';
+import About from './components/About';
+import './App.css';
 
-function App() {
+const App = function () {
   return (
     <HashRouter>
       <body className="d-flex h-100 text-center text-white bg-dark">
         <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
           <header className="mb-3">
-            <h3 class="float-md-start mb-0">Bertrand Watelet</h3>
+            <h3 className="float-md-start mb-0">Bertrand Watelet</h3>
             <nav className="nav nav-masthead justify-content-center float-md-end">
               <NavLink to="/" className="nav-link">
                 Home
@@ -29,7 +31,7 @@ function App() {
             </nav>
           </header>
 
-          <main class="px-3 mb-auto mt-auto">
+          <main className="px-3 mb-auto mt-auto">
             <div className="content">
               <Routes>
                 <Route exact path="/" element={<Home />} />
@@ -43,6 +45,6 @@ function App() {
       </body>
     </HashRouter>
   );
-}
+};
 
 export default App;
