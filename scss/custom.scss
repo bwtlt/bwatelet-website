@@ -72,16 +72,9 @@ header {
 }
 
 .typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  // animation: 
-    // blink-caret .75s step-end infinite;
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+  overflow: hidden;
+  border-right: .15em solid colors.get(primary, yellow-vivid-400);
+  white-space: nowrap;
 }
 
 div#root {
@@ -98,7 +91,6 @@ div#root {
 }
 
 .projects-grid {
-  justify-content: center;
   display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -147,6 +139,19 @@ div#root {
 	transition: .4s ease-out;
 }
 
+@media (max-width: 1200px) {
+  .projects-grid {
+    max-height: unset;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .project-card {
+    margin-left: unset;
+    margin-right: unset;
+    max-width: 80vw;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -156,4 +161,34 @@ a {
   margin: 1rem;
   padding: 1rem;
   border-radius: 0;
+}
+
+.burger
+{
+    display: none;
+}
+ 
+@media all and (max-width: 991px)
+{
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .nav-link
+    {
+        display: none;
+    }
+ 
+    .burger
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: colors.get(neutrals, grey-900);
+        cursor: pointer;
+    }
 }
