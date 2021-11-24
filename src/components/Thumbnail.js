@@ -1,13 +1,29 @@
-import "../App.css";
+import React from 'react';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import PropTypes from 'prop-types';
 
-function Thumbnail(props) {
+const Thumbnail = function (props) {
+  const {
+    link, image, title, description,
+  } = props;
   return (
-    <div className="project mt-3 mb-3">
-      <h1>{props.name}</h1>
-      <div className="project-category">{props.category}</div>
-      <div className="project-title">{props.title}</div>
-    </div>
+    <Card className="project-card">
+      <Card.Img variant="top" src={image} />
+      <Card.Body>
+        <Card.Title>{title}</Card.Title>
+        <Card.Text>{description}</Card.Text>
+        <a href={link}><Button variant="primary">Learn more</Button></a>
+      </Card.Body>
+    </Card>
   );
-}
+};
+
+Thumbnail.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};
 
 export default Thumbnail;

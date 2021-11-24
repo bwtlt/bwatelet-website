@@ -6,15 +6,14 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Articles from './components/Articles';
 import About from './components/About';
-import './App.css';
 
 const App = function () {
   return (
     <HashRouter>
-      <body className="d-flex h-100 text-center text-white bg-dark">
-        <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <div className="d-flex h-100 text-center">
+        <div className="cover-container d-flex w-100 h-100 mx-auto flex-column">
           <header className="mb-3">
-            <h3 className="float-md-start mb-0">Bertrand Watelet</h3>
+            <img className="logo" alt="logo" src="favicon.svg" />
             <nav className="nav nav-masthead justify-content-center float-md-end">
               <NavLink to="/" className="nav-link">
                 Home
@@ -42,7 +41,7 @@ const App = function () {
             </div>
           </main>
         </div>
-      </body>
+      </div>
     </HashRouter>
   );
 };
