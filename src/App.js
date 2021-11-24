@@ -31,7 +31,7 @@ const App = function () {
           </header>
 
           <main className="px-3 mb-auto mt-auto">
-            <div className="content">
+            <div className="container">
               <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
