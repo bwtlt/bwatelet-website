@@ -3,34 +3,66 @@ import PropTypes from 'prop-types';
 import Thumbnail from './Thumbnail';
 
 const ProjectCategory = function (props) {
-  const { children } = props;
-  return <div className="project-category">{children}</div>;
+  const { children, name } = props;
+  return (
+    <div className="project-category">
+      <h2>{name}</h2>
+      <div className="projects-grid">{children}</div>
+    </div>
+  );
 };
 
 ProjectCategory.propTypes = {
   children: PropTypes.node.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 const Projects = function () {
   return (
-    <div>
-      <h1 className="mb-3">Projects</h1>
-      <div className="projects">
-        <ProjectCategory>
-          <Thumbnail
-            link="/dev"
-            image=""
-            title="Software Developer"
-            description="VIAVI Solutions, Keranova"
-          />
-          <Thumbnail
-            link="/dromabear"
-            image=""
-            title="Music Producer"
-            description="Dromabear, Nurses"
-          />
-        </ProjectCategory>
-      </div>
+    <div className="projects">
+      <ProjectCategory name="Software Development">
+        <Thumbnail
+          link="https://www.linkedin.com/in/bertrand-watelet/"
+          image="https://www.medianesysteme.com/images/Logos/logo_mediane-systeme_web2.png"
+          title="C++ Developer"
+          description="Software development consulting for VIAVI Solutions and Keranova (2017-2020)"
+        />
+        <Thumbnail
+          link="https://www.linkedin.com/in/bertrand-watelet/"
+          image="https://www.keranova.fr/wp-content/uploads/2016/03/Keranova-logo.png"
+          title="C++ Developer"
+          description="Software development at Keranova (2020-today)"
+        />
+        <Thumbnail
+          link="https://dogparkmap.bwatelet.fr/"
+          image="dogparkmap.png"
+          title="Dog Park Map"
+          description="A work-in-progress collaborative map of places to walk your dog."
+        />
+        <Thumbnail
+          link="https://github.com/bwtlt/dromkit"
+          title="DROMKIT"
+          description="A work-in-progress online drum machine."
+        />
+        <Thumbnail
+          link="https://github.com/bwtlt/photomaton"
+          title="Pi-Photomaton"
+          description="A Raspberry Pi-powered photobooth."
+        />
+      </ProjectCategory>
+      <ProjectCategory name="Music">
+        <Thumbnail
+          link="https://dromabear.bandcamp.com/"
+          image="https://f4.bcbits.com/img/0025458834_10.jpg"
+          title="Dromabear"
+          description="Solo project, production and live performances since 2019."
+        />
+        <Thumbnail
+          link="https://www.facebook.com/Nursesrockmusic"
+          title="Nurses"
+          description="Guitar, drum machine and synthesizers from 2015 to 2020."
+        />
+      </ProjectCategory>
     </div>
   );
 };
