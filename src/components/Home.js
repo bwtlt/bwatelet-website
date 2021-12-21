@@ -1,4 +1,7 @@
 import { React, useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Button from 'react-bootstrap/Button';
 
 const INTERVAL_PERIOD = 120;
 const TEXTS = [
@@ -42,6 +45,12 @@ const Home = function () {
           {text}
         </span>
       </h1>
+      <div className="contact">
+        <Button className="contact-me" href="mailto:me@bwatelet.fr">
+          <FontAwesomeIcon icon={faEnvelope} />
+          <span>Contact me</span>
+        </Button>
+      </div>
     </div>
   );
 };

@@ -191,3 +191,47 @@ a {
         cursor: pointer;
     }
 }
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+.socials {
+  background-color: colors.get(supporting, teal-400);
+}
+
+.contact-me {
+  background-color: colors.get(supporting, teal-700);
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-me:active {
+  background-color: colors.get(supporting, teal-800);
+  border: none;
+}
+
+.contact-me:hover {
+  background-color: colors.get(supporting, teal-900);
+  border: none;
+}
+
+.contact-me:focus, .contact-me:focus:active {
+  background-color: colors.get(supporting, teal-800);
+  box-shadow: 0 0 0 0.25rem colors.get(supporting, teal-400);
+  border: none;
+}
+
+.contact-me span {
+  margin-left: 0.5em;
+  font-size: 20px;
+}
+
+.contact-me svg {
+  font-size: 15px;
+}
