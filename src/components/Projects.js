@@ -23,13 +23,13 @@ const Projects = function () {
       <ProjectCategory name="Software Development">
         <Thumbnail
           link="https://www.linkedin.com/in/bertrand-watelet/"
-          image="https://www.medianesysteme.com/images/Logos/logo_mediane-systeme_web2.png"
+          image="mediane.png"
           title="C++ Developer"
           description="Software development consulting for VIAVI Solutions and Keranova (2017-2020)"
         />
         <Thumbnail
           link="https://www.linkedin.com/in/bertrand-watelet/"
-          image="https://www.keranova.fr/wp-content/uploads/2016/03/Keranova-logo.png"
+          image="keranova.png"
           title="C++ Developer"
           description="Software development at Keranova (2020-today)"
         />

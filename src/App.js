@@ -4,7 +4,6 @@ import {
 } from 'react-router-dom';
 import Home from './components/Home';
 import Projects from './components/Projects';
-import Articles from './components/Articles';
 import About from './components/About';
 
 const App = function () {
@@ -22,8 +21,8 @@ const App = function () {
               <NavLink to="/projects" className="nav-link">
                 Projects
               </NavLink>
-              <NavLink to="/articles" className="nav-link">
-                Articles
+              <NavLink to="/blog" className="nav-link">
+                Blog
               </NavLink>
               <NavLink to="/about" className="nav-link">
                 About
@@ -36,7 +35,6 @@ const App = function () {
               <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
-                <Route path="/articles" element={<Articles />} />
                 <Route path="/about" element={<About />} />
               </Routes>
             </div>
