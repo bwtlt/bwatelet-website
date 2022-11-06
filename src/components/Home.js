@@ -8,6 +8,7 @@ const TEXTS = [
   'software dev',
   'music producer',
   'husband',
+  'future dad',
   'dog lover',
   'van-traveler',
 ];

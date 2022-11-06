@@ -90,10 +90,7 @@ div#root {
 }
 
 .projects-grid {
-  display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-  max-height: 1000px;
+  display: grid;
 }
 
 .project-card {
@@ -138,17 +135,12 @@ div#root {
 	transition: .4s ease-out;
 }
 
-@media (max-width: 1200px) {
-  .projects-grid {
-    max-height: unset;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .project-card {
-    margin-left: unset;
-    margin-right: unset;
-    max-width: 80vw;
-  }
+@media (min-width: 600px) {
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .projects-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 a {

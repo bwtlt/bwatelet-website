@@ -31,7 +31,19 @@ const Projects = function () {
           link="https://www.linkedin.com/in/bertrand-watelet/"
           image="keranova.png"
           title="C++ Developer"
-          description="Software development at Keranova (2020-today)"
+          description="Software development at Keranova (2020-2022)"
+        />
+        <Thumbnail
+          link="https://github.com/bwtlt/birth-list"
+          image="birthlist.png"
+          title="Liste de naissance"
+          description="A birth-list for our baby coming in winter 2022."
+        />
+        <Thumbnail
+          link="https://bwtlt.github.io/wakavanture_thegame/"
+          image="wakavanture.jpg"
+          title="Wakavanture - The game"
+          description="A pixel art vertical scroller where you get to drive our van."
         />
         <Thumbnail
           link="https://dogparkmap.bwatelet.fr/"
@@ -48,6 +60,7 @@ const Projects = function () {
           link="https://github.com/bwtlt/photomaton"
           title="Pi-Photomaton"
           description="A Raspberry Pi-powered photobooth."
+          image="photobooth.jpeg"
         />
       </ProjectCategory>
       <ProjectCategory name="Music">
