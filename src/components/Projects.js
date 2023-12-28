@@ -37,7 +37,7 @@ const Projects = function () {
           link="https://github.com/bwtlt/birth-list"
           image="birthlist.png"
           title="Liste de naissance"
-          description="A birth-list for our baby coming in winter 2022."
+          description="A birth-list for our baby born in Dec. 2022."
         />
         <Thumbnail
           link="https://bwtlt.github.io/wakavanture_thegame/"

@@ -7,7 +7,11 @@ const Thumbnail = function (props) {
     link, image, title, description,
   } = props;
   return (
-    <a href={link}>
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <Card className="project-card">
         {image && <Card.Img variant="top" src={image} />}
         <Card.Body>

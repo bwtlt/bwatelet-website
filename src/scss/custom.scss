@@ -165,23 +165,6 @@ a {
     {
         height: 60px;
     }
- 
-    nav .nav-link
-    {
-        display: none;
-    }
- 
-    .burger
-    {
-        width: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        font-size: 40px;
-        color: colors.get(neutrals, grey-900);
-        cursor: pointer;
-    }
 }
 
 .contact {

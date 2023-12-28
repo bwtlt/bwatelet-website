@@ -13,7 +13,6 @@ const App = function () {
           <header className="mb-3">
             <img className="logo" alt="logo" src="favicon.svg" />
             <nav className="nav nav-masthead justify-content-center float-md-end">
-              <div className="burger">☰</div>
               <NavLink to="/" className="nav-link">
                 Home
               </NavLink>
