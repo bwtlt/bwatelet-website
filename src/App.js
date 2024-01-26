@@ -2,6 +2,8 @@ import React from 'react';
 import {
   HashRouter, Routes, Route, NavLink,
 } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Home from './components/Home';
 import Projects from './components/Projects';
 
@@ -33,6 +35,9 @@ const App = function () {
           </main>
         </div>
       </div>
+      <footer className="footer">
+        <a aria-label="Github page" href="https://github.com/bwtlt"><FontAwesomeIcon icon={faGithub} /></a>
+      </footer>
     </HashRouter>
   );
 };

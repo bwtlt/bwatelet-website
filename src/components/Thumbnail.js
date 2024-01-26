@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Thumbnail = function (props) {
   const {
-    link, image, title, description,
+    link, image, title, description, keywords,
   } = props;
   return (
     <a
@@ -13,10 +13,13 @@ const Thumbnail = function (props) {
       rel="noopener noreferrer"
     >
       <Card className="project-card">
-        {image && <Card.Img variant="top" src={image} />}
+        <div className="card-image">
+          {image && <Card.Img variant="top" src={image} />}
+        </div>
         <Card.Body>
           <Card.Title className="card-title">{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
+          {keywords && <Card.Footer>{keywords}</Card.Footer>}
         </Card.Body>
       </Card>
     </a>
@@ -26,6 +29,7 @@ const Thumbnail = function (props) {
 Thumbnail.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  keywords: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   image: PropTypes.string,
 };
