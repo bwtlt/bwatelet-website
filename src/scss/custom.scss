@@ -2,6 +2,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 body {
+  height: 100vh;
   margin: 0;
   font-family: 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -77,11 +78,16 @@ header {
 }
 
 div#root {
-  height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .projects {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .project-category {
@@ -206,10 +212,6 @@ a {
   margin-top: 1em;
 }
 
-.socials {
-  background-color: colors.get(supporting, teal-400);
-}
-
 .contact-me {
   background-color: colors.get(supporting, teal-700);
   border: none;
@@ -248,4 +250,18 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-size: xx-large;
+  gap: 1rem;
+}
+
+.footer a {
+  color: colors.get(neutrals, grey-900);
+}
+
+.footer a:hover {
+  color: colors.get(neutrals, grey-600);
+}
+
+.thumbnail-keywords {
+  font-style: italic;
 }

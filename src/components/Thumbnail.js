@@ -19,7 +19,7 @@ const Thumbnail = function (props) {
         <Card.Body>
           <Card.Title className="card-title">{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          {keywords && <Card.Footer>{keywords}</Card.Footer>}
+          {keywords && <Card.Footer className="thumbnail-keywords">{keywords}</Card.Footer>}
         </Card.Body>
       </Card>
     </a>
