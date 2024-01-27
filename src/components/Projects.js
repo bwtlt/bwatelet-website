@@ -20,7 +20,7 @@ ProjectCategory.propTypes = {
 const Projects = function () {
   return (
     <div className="projects">
-      <ProjectCategory name="Software Development">
+      <ProjectCategory name="Software">
         <Thumbnail
           link="https://www.linkedin.com/in/bertrand-watelet/"
           image="mediane.png"
@@ -36,18 +36,27 @@ const Projects = function () {
           keywords="C++, Linux, RTOS"
         />
         <Thumbnail
-          link="https://github.com/bwtlt/birth-list"
-          image="birthlist.png"
-          title="Liste de naissance"
-          description="A birth-list for our baby born in Dec. 2022."
-          keywords="React, Firebase"
-        />
-        <Thumbnail
           link="https://bwtlt.github.io/wakavanture_thegame/"
           image="wakavanture.jpg"
           title="Wakavanture - The game"
           description="A pixel art vertical scroller where you get to drive our van."
           keywords="Godot"
+        />
+        <Thumbnail
+          link="https://github.com/bwtlt/photomaton"
+          title="Pi-Photomaton"
+          image="photomaton.svg"
+          description="A Raspberry Pi-powered photobooth."
+          keywords="Raspberry Pi, C++, Qt"
+        />
+      </ProjectCategory>
+      <ProjectCategory name="Web">
+        <Thumbnail
+          link="https://github.com/bwtlt/birth-list"
+          image="birthlist.png"
+          title="Liste de naissance"
+          description="A birth-list for our baby born in Dec. 2022."
+          keywords="React, Firebase"
         />
         <Thumbnail
           link="https://dogparkmap.bwatelet.fr/"
@@ -59,26 +68,29 @@ const Projects = function () {
         <Thumbnail
           link="https://github.com/bwtlt/dromkit"
           title="DROMKIT"
+          image="dromkit.svg"
           description="A work-in-progress online drum machine."
           keywords="React"
         />
         <Thumbnail
-          link="https://github.com/bwtlt/photomaton"
-          title="Pi-Photomaton"
-          description="A Raspberry Pi-powered photobooth."
-          keywords="Raspberry Pi, C++, Qt"
+          link="https://github.com/bwtlt/bwatelet-website"
+          image="favicon.svg"
+          title="bwatelet.fr"
+          description="My personal website that you are currently visiting."
+          keywords="React, Bootstrap"
         />
       </ProjectCategory>
       <ProjectCategory name="Music">
         <Thumbnail
           link="https://www.poto-feu-events.com/dromabear"
-          image="dromabear.png"
+          image="dromabear.jpeg"
           title="Dromabear"
           description="Solo project, production and live performances since 2019."
         />
         <Thumbnail
           link="https://www.facebook.com/Nursesrockmusic"
           title="Nurses"
+          image="nurses.jpg"
           description="Guitar, drum machine and synthesizers from 2015 to 2020."
         />
       </ProjectCategory>

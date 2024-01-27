@@ -111,7 +111,7 @@ div#root {
 
 .project-card {
   height: 100%;
-  width: 20em;
+  width: 18em;
   color: colors.get(neutrals, grey-900);
 	display: flex;
   flex-direction: column;
@@ -188,7 +188,7 @@ a {
 
   width: 100%;
   height: 15em;
-  padding: 0 1em ;
+  padding: 1em 2em;
   border-radius: 0;
   background-color: colors.get(neutrals, grey-100);
 }
@@ -264,4 +264,8 @@ a {
 
 .thumbnail-keywords {
   font-style: italic;
+}
+
+.card-title {
+  font-weight: bold;
 }
