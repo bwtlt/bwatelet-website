@@ -29,12 +29,13 @@ const Thumbnail = function (props) {
 Thumbnail.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  keywords: PropTypes.string.isRequired,
+  keywords: PropTypes.string,
   link: PropTypes.string.isRequired,
   image: PropTypes.string,
 };
 
 Thumbnail.defaultProps = {
+  keywords: '',
   image: '',
 };
 

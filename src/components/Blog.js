@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Spinner } from 'react-bootstrap';
 import purify from 'dompurify';
 
 const Blog = function () {
@@ -25,8 +26,14 @@ const Blog = function () {
     return <span>{date.toLocaleDateString()}</span>;
   }
 
+  const spinner = (
+    <Spinner animation="grow" role="status" className="spinner">
+      <span className="visually-hidden">Loading...</span>
+    </Spinner>
+  );
+
   return (
-    loading ? <p>LOADING</p>
+    loading ? spinner
       : (
         <div className="blog">
           {posts.map((post) => (

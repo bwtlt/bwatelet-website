@@ -37,14 +37,14 @@ const Home = function () {
 
   return (
     <div id="hi">
-      <h1>Bonjour, je suis Bertrand,</h1>
-      <h1>
+      <div>Bonjour, je suis Bertrand,</div>
+      <div>
         je suis un
         {' '}
         <span className="typewriter">
           {text}
         </span>
-      </h1>
+      </div>
       <p className="intro">
         Un site web, une appli ou un logiciel à créer ?
         <br />
