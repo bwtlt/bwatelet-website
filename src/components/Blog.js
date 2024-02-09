@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import purify from 'dompurify';
 
 const Blog = function () {
   const [posts, setPosts] = useState([]);
@@ -42,7 +43,10 @@ const Blog = function () {
               </h6>
               <div
                 className="post-body"
-                dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+                // eslint-disable-next-line react/no-danger
+                dangerouslySetInnerHTML={
+                  { __html: purify.sanitize(post.content.rendered, { sanitize: true }) }
+                }
               />
             </div>
           ))}
