@@ -5,12 +5,11 @@ import Button from 'react-bootstrap/Button';
 
 const INTERVAL_PERIOD = 120;
 const TEXTS = [
-  'software dev',
-  'music producer',
-  'husband',
-  'dad',
-  'dog lover',
-  'van-traveler',
+  'développeur logiciel',
+  'musicien',
+  'mari',
+  'papa',
+  'voyageur en van',
 ];
 
 const Home = function () {
@@ -38,23 +37,23 @@ const Home = function () {
 
   return (
     <div id="hi">
-      <h1>Hi, I&apos;m Bertrand,</h1>
+      <h1>Bonjour, je suis Bertrand,</h1>
       <h1>
-        I&apos;m a
+        je suis un
         {' '}
         <span className="typewriter">
           {text}
         </span>
       </h1>
       <p className="intro">
-        Need a website, an app or a software?
+        Un site web, une appli ou un logiciel à créer ?
         <br />
-        Let&apos;s get in contact!
+        Entrons en contact !
       </p>
       <div className="contact">
         <Button className="contact-me" href="mailto:me@bwatelet.fr">
           <FontAwesomeIcon icon={faEnvelope} />
-          <span>Contact me</span>
+          <span>Contactez-moi</span>
         </Button>
       </div>
     </div>

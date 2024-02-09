@@ -16,10 +16,10 @@ const App = function () {
           <img className="logo" alt="logo" src="favicon.svg" />
           <nav className="nav nav-masthead justify-content-center float-md-end">
             <NavLink to="/" className="nav-link">
-              Home
+              Accueil
             </NavLink>
             <NavLink to="/projects" className="nav-link">
-              Projects
+              Projets
             </NavLink>
             <NavLink to="/blog" className="nav-link">
               Blog
