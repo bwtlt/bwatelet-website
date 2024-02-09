@@ -46,6 +46,11 @@ const Home = function () {
           {text}
         </span>
       </h1>
+      <p className="intro">
+        Need a website, an app or a software?
+        <br />
+        Let&apos;s get in contact!
+      </p>
       <div className="contact">
         <Button className="contact-me" href="mailto:me@bwatelet.fr">
           <FontAwesomeIcon icon={faEnvelope} />

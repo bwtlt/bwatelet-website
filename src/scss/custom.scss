@@ -209,7 +209,7 @@ a {
 .contact {
   display: flex;
   flex-direction: row;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .contact-me {
@@ -268,4 +268,26 @@ a {
 
 .card-title {
   font-weight: bold;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  max-width: 800px;
+  align-items: flex-start;
+  min-height: 100%;
+}
+
+.intro {
+  text-align: justify;
+  font-size: x-large;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
 }

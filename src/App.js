@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Home from './components/Home';
 import Projects from './components/Projects';
+import Blog from './components/Blog';
 
 const App = function () {
   return (
@@ -20,7 +21,9 @@ const App = function () {
             <NavLink to="/projects" className="nav-link">
               Projects
             </NavLink>
-            <a href="https://bwatelet.fr/blog" className="nav-link">Blog</a>
+            <NavLink to="/blog" className="nav-link">
+              Blog
+            </NavLink>
           </nav>
         </header>
 
@@ -29,6 +32,7 @@ const App = function () {
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/blog" element={<Blog />} />
             </Routes>
           </div>
         </main>
