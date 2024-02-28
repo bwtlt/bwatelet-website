@@ -51,7 +51,7 @@ const Home = function () {
         Entrons en contact !
       </p>
       <div className="contact">
-        <Button className="contact-me" href="mailto:me@bwatelet.fr">
+        <Button className="contact-me" href="mailto:contact@bwatelet.fr">
           <FontAwesomeIcon icon={faEnvelope} />
           <span>Contactez-moi</span>
         </Button>
