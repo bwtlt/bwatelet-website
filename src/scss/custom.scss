@@ -51,9 +51,6 @@ header {
     align-items: center;
   }
 
-  .logo {
-  }
-
   .nav {
     margin: unset;
   }
@@ -243,8 +240,10 @@ a {
 
 .contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 1rem;
   margin-top: 1rem;
+  align-items: stretch;
 }
 
 .contact-me {
@@ -254,6 +253,8 @@ a {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  height: 3rem;
+  width: 14rem;
 }
 
 .contact-me:active {
@@ -335,4 +336,8 @@ a {
 
 .spinner {
   margin: auto
+}
+
+.phone-number {
+  color: colors.get(neutrals, grey-050);
 }
