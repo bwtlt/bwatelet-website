@@ -20,14 +20,7 @@ ProjectCategory.propTypes = {
 const Projects = function () {
   return (
     <div className="projects">
-      <ProjectCategory name="Logiciel">
-        <Thumbnail
-          link="https://www.linkedin.com/in/bertrand-watelet/"
-          image="mediane.png"
-          title="Développeur C++"
-          description="Développeur logiciel consultant pour VIAVI Solutions et Keranova (2017-2020)"
-          keywords="C/C++, Linux"
-        />
+      <ProjectCategory name="Pro">
         <Thumbnail
           link="https://www.linkedin.com/in/bertrand-watelet/"
           image="keranova.png"
@@ -35,6 +28,15 @@ const Projects = function () {
           description="Développeur logiciel chez Keranova (2020-2022)"
           keywords="C++, Linux, RTOS"
         />
+        <Thumbnail
+          link="https://www.linkedin.com/in/bertrand-watelet/"
+          image="mediane.png"
+          title="Développeur C++"
+          description="Développeur logiciel consultant pour VIAVI Solutions et Keranova (2017-2020)"
+          keywords="C/C++, Linux"
+        />
+      </ProjectCategory>
+      <ProjectCategory name="Perso - Logiciel">
         <Thumbnail
           link="https://bwtlt.github.io/wakavanture_thegame/"
           image="wakavanture.jpg"
@@ -50,7 +52,7 @@ const Projects = function () {
           keywords="Raspberry Pi, C++, Qt"
         />
       </ProjectCategory>
-      <ProjectCategory name="Web">
+      <ProjectCategory name="Perso - Web">
         <Thumbnail
           link="https://github.com/bwtlt/birth-list"
           image="birthlist.png"
