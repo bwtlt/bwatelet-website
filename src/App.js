@@ -20,9 +20,7 @@ const App = function () {
             <NavLink to="/projects" className="nav-link">
               Projets
             </NavLink>
-            <NavLink to="https://bwatelet.fr/blog" className="nav-link">
-              Blog
-            </NavLink>
+            <a href="https://bwatelet.fr/blog" className="nav-link">Blog</a>
           </nav>
         </header>
 
